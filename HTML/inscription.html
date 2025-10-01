@@ -16,7 +16,58 @@
             <a href="../HTML/inscription.html">Inscription</a>
         </nav>
     </header>
-    <p>page d'inscription</p>
+    <h1>Page d'inscription</h1>
+    <section>
+        <article>
+            <form action=""></form>
+            <h2>Inscription</h2>
+            <div class="form-row">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+                <label for="name">Prenom</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+                <label for="mail">Mail</label>
+                <input type="email" name="name" id="mail" required>
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="mdp" id="password" required pattern="[0-9][a-z]{3}">
+            </div>
+            <div>
+                <input type="radio" id="particulier" name="type" value="Particulier" checked>
+                <label for="particulier">Particulier</label>
+            </div>
+            <div>
+                <input type="radio" id="professionnel" name="type" value="Professionnel">
+                <label for="professionnel">Professionnel</label>
+            </div>
+            <div class="form-buttons">
+                <div class="form-actions">
+                <input type="submit" value="S'inscrire" class="btn-sign">
+                <input type="reset" value="Réinitialiser" class="btn reset">
+            </div>
+        </div>
+        </article>
+        <article>
+            <h2>Connexion</h2>
+            <div>
+                <label for="mail">Mail</label>
+                <input type="email" name="name" id="mail" required>
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="mdp" id="password" required>
+            </div>
+            <div>
+                <div>
+                    <input type="submit" value="Se connecter" class="btn-login">
+                <input type="reset" value="Réinitialiser" class="btn reset">
+                </div>
+            </div>
+        </article>
+    </section>
     <footer>
         <section>
             <article>
