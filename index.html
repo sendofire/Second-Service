@@ -10,10 +10,10 @@
 <body>
     <header>
        <nav>
-            <a href="index.html"><img src="image/Second-service_logo.png" width="20%" alt="logo Second Service"></a><!--width a déplacer dans le CSS après-->
-            <a href="HTML/catalogue.html">Catalogue</a>
-            <a href="HTML/contact.html">Contact</a>
-            <a href="HTML/inscription.html">Inscription</a>
+            <a href="index.html" id="logo"><img src="image/Second-service_logo.png" alt="logo Second Service"></a><!--width a déplacer dans le CSS après-->
+            <a href="HTML/catalogue.html" id="text">Catalogue</a>
+            <a href="HTML/contact.html" id="text">Contact</a>
+            <a href="HTML/inscription.html" id="text">Inscription</a>
         </nav>
     </header>
 
@@ -38,8 +38,8 @@
         <article>
             <h3>Pouvez-vous nous aider?</h3>
             <p>Bien sûr que vous pouvez nous aider. <br>
-            Vous pouvez faire un don d'objet à cet adresse <mark><em>dsees</em></mark><br>
-            Ou vous pouvez aussi vous engager en tant que bénévole par mail dans la page <a href="HTML/contact.html">Contact</a>.</p>
+            Vous pouvez faire un don d'ustensile de cuisine en bon état ou en panne (nous nous occupons de la réparation) dans notre local<br>
+            Ou vous pouvez aussi vous engager en tant que bénévole par mail dans la page <a href="HTML/contact.html" id="text">Contact</a>.</p>
             <img src="" alt="image colis">
         </article>
     </section>
@@ -47,36 +47,22 @@
     <a id="ancre" href="#">⬆</a>
     
     <footer>
-        <section>
-            <article>
-                <p><strong>Arbre du site</strong></p>    <!-- Penser à enlever <strong> -->
-                <ul>
-                    <li>
-                        <a href="index.html">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="HTML/catalogue.html">Catalogue</a>
-                    </li>
-                    <li>
-                        <a href="HTML/contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="HTML/inscription.html">Inscription</a>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <p><strong>Conditions générales</strong></p>   <!-- Penser à enlever <strong> -->
-                <p>Ceci est un projet étudiant <br>
-                © 2025 Second Service. Tous droits réservés.</p>
-            </article>
-            <article>
-                <p><strong>Réseau et contact</strong></p>
-                <a href="HTML/contact.html"><img src="" alt="logo Mail"></a>
-                <a href=""><img src="" alt="logo Instagram"></a>
-                <a href=""><img src="" alt="logo TikTok"></a>
-            </article>
-        </section>
+        <div class="footer-unique">
+            <span class="footer-links">
+                <a href="index.html" id="text">Accueil</a>
+                <a href="HTML/catalogue.html" id="text">Catalogue</a>
+                <a href="HTML/contact.html" id="text">Contact</a>
+                <a href="HTML/inscription.html" id="text">Inscription</a>
+            </span>
+            <span class="footer-legal">
+                Ceci est un projet étudiant &nbsp;|&nbsp; © 2025 Second Service. Tous droits réservés.
+            </span>
+            <span class="footer-social">
+                <a href="HTML/contact.html"><img src="image/logoGmail.png" alt="logo Mail"></a>
+                <a href="HTML/erreur.html"><img src="image/Instagram_icon.png" alt="logo Instagram"></a>
+                <a href=""><img src="image/logoTiktok.png" alt="logo TikTok"></a>
+            </span>
+        </div>
     </footer>
 </body>
 </html>

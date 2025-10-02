@@ -9,16 +9,16 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="../image/Second-service_logo.png" width="20%" alt="logo Second Service"></a><!--width a déplacer dans le CSS après-->
-            <a href="../HTML/catalogue.html">Catalogue</a>
-            <a href="../HTML/contact.html">Contact</a>
-            <a href="../HTML/inscription.html">Inscription</a>
+            <a href="../index.html" id="logo"><img src="../image/Second-service_logo.png" alt="logo Second Service"></a>
+            <a href="../HTML/catalogue.html" id="text">Catalogue</a>
+            <a href="../HTML/contact.html" id="text">Contact</a>
+            <a href="../HTML/inscription.html" id="text">Inscription</a>
         </nav>
     </header>
     <h1>Page d'inscription</h1>
     <section>
         <article>
-            <form action="">
+            <form action="erreur.html">
                 <h2>Inscription</h2>
                 <div class="form-row">
                     <label for="name">Nom</label>
@@ -32,7 +32,7 @@
                 </div>
                 <div>
                     <label for="password">Mot de passe</label>
-                    <input type="password" name="mdp" id="password" required pattern="[0-9][a-z]{3}">
+                    <input type="password" name="mdp" id="password" required>
                 </div>
                 <div>
                     <input type="radio" id="particulier" name="type" value="Particulier" checked>
@@ -70,36 +70,22 @@
         </article>
     </section>
     <footer>
-        <section>
-            <article>
-                <p><strong>Arbre du site</strong></p>    <!-- Penser à enlever <strong> -->
-                <ul>
-                    <li>
-                        <a href="../index.html">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="../HTML/catalogue.html">Catalogue</a>
-                    </li>
-                    <li>
-                        <a href="../HTML/contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="../HTML/inscription.html">Inscription</a>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <p><strong>Conditions générales</strong></p>   <!-- Penser à enlever <strong> -->
-                <p>Ceci est un projet étudiant <br>
-                © 2025 Second Service. Tous droits réservés.</p>
-            </article>
-            <article>
-                <p><strong>Réseau et contact</strong></p>
-                <a href="../HTML/contact.html"><img src="" alt="logo Mail"></a>
-                <a href=""><img src="" alt="logo Instagram"></a>
-                <a href=""><img src="" alt="logo TikTok"></a>
-            </article>
-        </section>
+        <div class="footer-unique">
+            <span class="footer-links">
+                <a href="../index.html" id="text">Accueil</a>
+                <a href="../HTML/catalogue.html" id="text">Catalogue</a>
+                <a href="../HTML/contact.html" id="text">Contact</a>
+                <a href="../HTML/inscription.html" id="text">Inscription</a>
+            </span>
+            <span class="footer-legal">
+                Ceci est un projet étudiant &nbsp;|&nbsp; © 2025 Second Service. Tous droits réservés.
+            </span>
+            <span class="footer-social">
+                <a href="../HTML/contact.html"><img src="../image/logoGmail.png" alt="logo Mail"></a>
+                <a href="../HTML/erreur.html"><img src="../image/Instagram_icon.png" alt="logo Instagram"></a>
+                <a href="../HTML/erreur.html"><img src="../image/logoTiktok.png" alt="logo TikTok"></a>
+            </span>
+        </div>
     </footer>
 </body>
 </html>
