@@ -286,7 +286,77 @@ section {
     justify-content: center;
 }
 
+/* Harmonize subject label, select, and buttons in the form */
+.contact-form .form-row label,
+.contact-form .form-row select {
+    width: 100%;
+    max-width: 320px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
+.contact-form .form-row select {
+    padding: 0.6em 1em;
+    border: 1px solid #a3b18a;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f5f5f0;
+    color: #222;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+.contact-form .form-row select:focus {
+    border: 1.5px solid #699546;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.contact-form .form-actions,
+.contact-form .form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.contact-form .btn,
+.contact-form .btn.secondary,
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+    padding: 0.6em 1.5em;
+    border-radius: 28px;
+    background: #699546;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px var(--shadow);
+}
+
+.contact-form .btn.secondary,
+.contact-form input[type="reset"] {
+    background: #a3b18a;
+    color: #222;
+}
+
+.contact-form .btn:hover,
+.contact-form .btn.secondary:hover,
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+    background: #3a5a40;
+    color: #fff;
+    box-shadow: 0 4px 12px var(--shadow);
+}
 
 
 /* Produits */
